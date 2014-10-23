@@ -1,7 +1,7 @@
 before_install:
  - sudo apt-get update -qq
 install:
- - sudo apt-get install -qq ninja-build libboost-regex-dev libboost-system-dev libboost-dev
+ - sudo apt-get install -qq libboost-regex-dev libboost-system-dev libboost-dev
 language: cpp
 compiler:
  - gcc
