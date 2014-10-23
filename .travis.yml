@@ -1,0 +1,9 @@
+before_install:
+	- sudo apt-get update -qq
+install:
+	- sudo apt-get install -qq ninja-build boost
+language: cpp
+compiler:
+	- gcc
+	- clang
+script: ./build.sh
