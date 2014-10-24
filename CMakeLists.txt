@@ -9,6 +9,8 @@ set(cpp11flag "-std=c++11")
 
 # Libraries
 
+find_package(Threads REQUIRED)
+
 # Boost
 set(boost_libs system regex thread)
 find_package(Boost COMPONENTS ${boost_libs} REQUIRED)
@@ -22,4 +24,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${cpp11flag} ${paranoid_error_flags} ${d
 
 # Executables
 add_executable(imap main.cpp)
-target_link_libraries(imap ${Boost_SYSTEM_LIBRARY})
+target_link_libraries(imap ${CMAKE_THREAD_LIBS_INIT} ${Boost_SYSTEM_LIBRARY})
