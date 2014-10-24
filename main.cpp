@@ -1,4 +1,3 @@
-#define BOOST_ASIO_HAS_MOVE
 #include <boost/asio.hpp>
 #include <iostream>
 //#include <functional>
