@@ -4,7 +4,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 # Turn off a warning triggered by Catch:
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-exit-time-destructors")
 
-file(GLOB testfiles "*.cpp")
-add_executable(tester ${testfiles})
+file(GLOB unit_tester_files "*.cpp")
+add_executable(unit_tester ${unit_tester_files})
 
-target_link_libraries(tester libaeimap)
+target_link_libraries(unit_tester aeimap)

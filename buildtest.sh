@@ -1,1 +1,1 @@
-./build.sh && ./build/test/tester
+./build.sh && ./test.sh
