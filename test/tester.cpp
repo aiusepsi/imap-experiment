@@ -1,10 +1,10 @@
+#include "external/catch.hpp"
+
 int blah(int);
 
-int main()
+TEST_CASE("Test blah", "[blah]")
 {
-	if(blah(7) != 8)
-	{
-		return 1;
-	}
-	return 0;
+	REQUIRE(blah(0) == 1);
+	REQUIRE(blah(1) == 2);
+	//REQUIRE(blah(2) == 2);
 }
