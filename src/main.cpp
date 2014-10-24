@@ -1,4 +1,7 @@
+#include "boost_disable_warnings.hpp"
 #include <boost/asio.hpp>
+#include "boost_enable_warnings.hpp"
+
 #include <iostream>
 
 using namespace std;
